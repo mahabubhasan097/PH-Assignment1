@@ -111,6 +111,48 @@
 
 /* Failure Section End */
 
+/* Achievement Section Start */
+.achievement{
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.achievement-container{
+    width: 1300px;
+}
+.achievement-content{
+    display: flex;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    gap:50px
+}
+.single-achievement{
+    border: 5px solid #005FAC;
+    border-radius: 8px;
+    border-bottom:0 ;
+    border-left:0 ;
+    border-right: 0;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.single-achievement img{
+    width: 90px;
+    height: 90px;
+}
+.single-achievement h3{
+    font-weight: 700;
+    font-size: 25px;
+    margin: 25px 0 15px;
+}
+.single-achievement p{
+    line-height: 26px;
+    color: #444343;
+}
+/* Achievement Section End */
+
 /* Plan Section Start */
 .plan {
     min-height: 100vh;
@@ -123,7 +165,7 @@
     width: 1300px;
 }
 
-.plan-container h1 {
+.plan-container h1, .achievement-container h1 {
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
@@ -165,6 +207,7 @@
     justify-content: start;
     align-items: center;
     margin-top: 130px;
+    margin-bottom: 80px;
 }
 
 .positive-inner {
