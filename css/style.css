@@ -7,22 +7,26 @@
     font-weight: 400;
 }
 
+.color-primary {
+    color: #16D887;
+}
+
 /* Banner Section Start */
 .banner {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("../images/banner/banner3.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom left;
 }
 
 .banner-content {
     display: flex;
     justify-content: end;
-    width: 1200px;
+    width: 1300px;
     text-align: right;
 }
 
@@ -43,7 +47,8 @@
     margin: 25px 0 30px;
 }
 
-.banner-content-inner button {
+.banner-content-inner button,
+.positive-inner button {
     font-weight: 600;
     font-size: 20px;
     padding: 20px 25px;
@@ -52,5 +57,198 @@
     border: none;
     border-radius: 5px;
 }
+.banner-content-inner button:hover,
+.positive-inner button:hover, .footer-right-content form button:hover{
+    cursor: pointer;
+    background-color: rgb(121, 121, 121);
+    color: white;
+}
 
 /* Banner Section End */
+
+/* Failure Section Start */
+.failure {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.failure-container {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-failure {
+    display: flex;
+    align-items: center;
+}
+
+.content-failure-inner {
+    padding: 180px 100px 0 90px;
+}
+
+.content-failure-inner ul {
+    list-style: none;
+}
+
+.content-failure-inner ul li {
+    margin-bottom: 10px;
+}
+
+.content-failure-inner h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+.content-failure-inner p {
+    margin: 25px 0 15px;
+    line-height: 26px;
+    color: #444343;
+}
+
+/* Failure Section End */
+
+/* Plan Section Start */
+.plan {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.plan-container {
+    width: 1300px;
+}
+
+.plan-container h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 50px;
+}
+
+.plan-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-plan {
+    text-align: center;
+}
+
+.single-plan h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 25px 0 15px;
+}
+
+.single-plan p {
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #737272;
+}
+
+.positive {
+    height: 350px;
+    background-image: url("../images/watch.png"), linear-gradient(90deg, #015faa 0%, rgba(0, 95, 172, 0) 100%);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+    border-radius: 8px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.positive-inner {
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 620px;
+}
+
+.positive-inner h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+/* Plan Section End */
+
+/* Footer Start */
+.footer {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.footer-container {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-left-content h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+}
+
+.footer-left-content p {
+    margin-bottom: 15px;
+}
+
+.footer-content-desc {
+    width: 485px;
+    margin: 15px 0 25px !important;
+    line-height: 26px;
+}
+
+.footer-social-links {
+    margin-top: 25px;
+}
+
+.footer-social-links a {
+    margin-right: 18px;
+}
+
+.footer-right-content {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.footer-right-content form input[type=email] {
+    display: block;
+    width: 325px;
+    height: 65px;
+    margin: 30px 0 15px;
+    padding-left: 20px;
+    background-color: black;
+    border: 1px solid grey;
+    color: white;
+    border-radius: 8px;
+}
+
+.footer-right-content form button {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 20px 35px;
+    color: white;
+    background-color: #005FAC;
+    border-radius: 8px;
+}
+
+/* Footer End */
