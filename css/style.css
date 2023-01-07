@@ -125,11 +125,12 @@
 .achievement-content{
     display: flex;
     padding: 1px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap:50px
+    margin-bottom: 100px;
 }
 .single-achievement{
+    width: 28%;
     border: 5px solid #005FAC;
     border-radius: 8px;
     border-bottom:0 ;
